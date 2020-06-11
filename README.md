@@ -13,10 +13,10 @@ N.B.: don't install it from the App Store.
 ## Cocoapods
 
 Cocoapods is the package manager we use to distribute the iOS SDK.
-Install it by executing: `gem install cocoapods`
+Install it by executing: `gem install cocoapods`.
 
 ## Project setup
 
 - Clone the project.
-- Run `pod install`
+- Run `pod install`.
 - Open `NexmoOneHack.xcworkspace` with Xcode.
