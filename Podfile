@@ -6,5 +6,6 @@ target 'NexmoOneHack' do
 
   # Pods for NexmoOneHack
   pod 'NexmoClient', '2.2.0'
+  pod 'SwiftyJWT', '0.0.3'
 
 end

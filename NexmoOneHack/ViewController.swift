@@ -4,7 +4,9 @@ import NexmoClient
 final class ViewController: UIViewController {
 
     private let npeName = ""
-    private let userToken = ""
+    private let rs256PrivateKey = ""
+    private let applicationId = ""
+    private let username = ""
 
     @IBOutlet weak var connectionStatusLabel: UILabel!
 
@@ -25,6 +27,11 @@ final class ViewController: UIViewController {
 
         NXMClient.shared.setDelegate(self)
 
+        let userToken = JWTGenerator.generateToken(
+            privateKey: rs256PrivateKey,
+            applicationId: applicationId,
+            username: username
+        )
         NXMClient.shared.login(withAuthToken: userToken)
     }
 }
