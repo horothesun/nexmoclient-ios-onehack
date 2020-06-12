@@ -22,7 +22,7 @@ Install it by executing: `gem install cocoapods`.
 - Open `NexmoOneHack.xcworkspace` with Xcode.
 - Update `ViewController`'s
   - `npeName`,
-  - `rs256PrivateKey`,
+  - `rs256PrivateKey` (e.g.: `-----BEGIN PRIVATE KEY-----\nABC...XYZ\n-----END PRIVATE KEY-----\n`),
   - `applicationId` and
   - `username`.
 - Run the app.
