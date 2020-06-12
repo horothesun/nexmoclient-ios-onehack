@@ -14,7 +14,15 @@ final class ViewController: UIViewController {
     }
 
     @IBAction func onLoginButtonTouchUpInside(_ sender: UIButton) {
-//        NXMClient.setConfiguration(NXMClientConfig(...))
+        // Configure for NPE
+//        let npeName = ""
+//        let clientConfig = NXMClientConfig(
+//            apiUrl: "https://\(npeName)-api.npe.nexmo.io",
+//            websocketUrl: "https://\(npeName)-ws.npe.nexmo.io",
+//            ipsUrl: "https://api.dev.nexmoinc.net/play4/v1/image"
+//        )
+//        NXMClient.setConfiguration(clientConfig)
+
         NXMClient.shared.setDelegate(self)
 
         NXMClient.shared.login(withAuthToken: userToken)
@@ -23,7 +31,11 @@ final class ViewController: UIViewController {
 
 extension ViewController: NXMClientDelegate {
 
-    func client(_ client: NXMClient, didChange status: NXMConnectionStatus, reason: NXMConnectionStatusReason) {
+    func client(
+        _ client: NXMClient,
+        didChange status: NXMConnectionStatus,
+        reason: NXMConnectionStatusReason
+    ) {
         let connectionStatus: String
         switch status {
         case .disconnected: connectionStatus = "Disconnected"
