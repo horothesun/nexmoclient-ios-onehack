@@ -18,7 +18,8 @@ final class ViewController: UIViewController {
         let clientConfig = NXMClientConfig(
             apiUrl: "https://\(npeName)-api.npe.nexmo.io",
             websocketUrl: "https://\(npeName)-ws.npe.nexmo.io",
-            ipsUrl: "https://api.dev.nexmoinc.net/play4/v1/image"
+            ipsUrl: "https://api.dev.nexmoinc.net/play4/v1/image",
+            useFirstIceCandidate: true
         )
         NXMClient.setConfiguration(clientConfig)
 
