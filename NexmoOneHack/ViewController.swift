@@ -3,6 +3,7 @@ import NexmoClient
 
 final class ViewController: UIViewController {
 
+    private let npeName = ""
     private let userToken = ""
 
     @IBOutlet weak var connectionStatusLabel: UILabel!
@@ -14,14 +15,12 @@ final class ViewController: UIViewController {
     }
 
     @IBAction func onLoginButtonTouchUpInside(_ sender: UIButton) {
-        // Configure for NPE
-//        let npeName = ""
-//        let clientConfig = NXMClientConfig(
-//            apiUrl: "https://\(npeName)-api.npe.nexmo.io",
-//            websocketUrl: "https://\(npeName)-ws.npe.nexmo.io",
-//            ipsUrl: "https://api.dev.nexmoinc.net/play4/v1/image"
-//        )
-//        NXMClient.setConfiguration(clientConfig)
+        let clientConfig = NXMClientConfig(
+            apiUrl: "https://\(npeName)-api.npe.nexmo.io",
+            websocketUrl: "https://\(npeName)-ws.npe.nexmo.io",
+            ipsUrl: "https://api.dev.nexmoinc.net/play4/v1/image"
+        )
+        NXMClient.setConfiguration(clientConfig)
 
         NXMClient.shared.setDelegate(self)
 

@@ -20,6 +20,6 @@ Install it by executing: `gem install cocoapods`.
 - Clone/fork the project.
 - Run `pod install`.
 - Open `NexmoOneHack.xcworkspace` with Xcode.
-- Update `ViewController.userToken`.
+- Update `ViewController`'s `npeName` and `userToken`.
 - Run the app.
 
