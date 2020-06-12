@@ -13,6 +13,7 @@
 		3C45CB442492D4B200B256E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C45CB422492D4B200B256E4 /* Main.storyboard */; };
 		3C45CB462492D4B500B256E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C45CB452492D4B500B256E4 /* Assets.xcassets */; };
 		3C45CB492492D4B500B256E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C45CB472492D4B500B256E4 /* LaunchScreen.storyboard */; };
+		3C7912212493BEB200E33737 /* JWTGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7912202493BEB200E33737 /* JWTGenerator.swift */; };
 		56B6A084D97876EA7FB63132 /* Pods_NexmoOneHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943216C2F19F66F4A067933F /* Pods_NexmoOneHack.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		3C45CB452492D4B500B256E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C45CB482492D4B500B256E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C45CB4A2492D4B500B256E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C7912202493BEB200E33737 /* JWTGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTGenerator.swift; sourceTree = "<group>"; };
 		8EBFD04AC9C3FC5DE235B1F0 /* Pods-NexmoOneHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexmoOneHack.release.xcconfig"; path = "Target Support Files/Pods-NexmoOneHack/Pods-NexmoOneHack.release.xcconfig"; sourceTree = "<group>"; };
 		943216C2F19F66F4A067933F /* Pods_NexmoOneHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexmoOneHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31891DDB6BDB986617C3D1A /* Pods-NexmoOneHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexmoOneHack.debug.xcconfig"; path = "Target Support Files/Pods-NexmoOneHack/Pods-NexmoOneHack.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				3C45CB3E2492D4B200B256E4 /* SceneDelegate.swift */,
 				3C45CB402492D4B200B256E4 /* ViewController.swift */,
 				3C45CB422492D4B200B256E4 /* Main.storyboard */,
+				3C7912202493BEB200E33737 /* JWTGenerator.swift */,
 				3C45CB452492D4B500B256E4 /* Assets.xcassets */,
 				3C45CB472492D4B500B256E4 /* LaunchScreen.storyboard */,
 				3C45CB4A2492D4B500B256E4 /* Info.plist */,
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C45CB412492D4B200B256E4 /* ViewController.swift in Sources */,
+				3C7912212493BEB200E33737 /* JWTGenerator.swift in Sources */,
 				3C45CB3D2492D4B200B256E4 /* AppDelegate.swift in Sources */,
 				3C45CB3F2492D4B200B256E4 /* SceneDelegate.swift in Sources */,
 			);
